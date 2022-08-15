@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chefs Magic</title>
+
+    <link rel="icon" href="./apple-touch-icon.png">
+    
+    <script src="https://kit.fontawesome.com/7d981fc66b.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light shadow sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand brand" href="#Home">
+            <img src="./Chefs Magic logo.gif" alt="logo" width="100em" class="shadow logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto fw-bold">
+              <li class="nav-item px-3 me-auto">
+                <a class="nav-link active maroon" aria-current="page" href="#Home">Home</a>
+              </li>
+              <li class="nav-item px-3 me-auto">
+                <a id="navbar-menu" class="nav-link giftCard" href="#Menu_Card">Menu Card</a>
+              </li>
+              <li class="nav-item px-3 me-auto">
+                <a class="nav-link" href="#About_Us">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle px-3 me-auto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Explore Foods
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Salads</a></li>
+                  <li><a class="dropdown-item" href="#">Deserts</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else</a></li>
+                </ul>
+              </li>
+              <li class="nav-item px-3 me-auto">
+                <a class="nav-link" href="#Reviews">Reviews</a>
+              </li>
+              
+              <li class="nav-item px-3 me-auto">
+                <button class="btn btn-danger btn-lg me-3 rounded-0 shadow" id="contactBtn" type="submit">Order Online</button>
+              </li>
+              <li class="nav-item ps-2 pe-3 m-auto" id="cart">
+                <a href="#"><i class="fa-solid fa-cart-shopping fa-xl fa-shake"></i></a>
+              </li>
+              <li class="nav-item px-4 m-auto" id="login">
+                <a href="#"><i class="fa-solid fa-user fa-xl"></i></a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+    <section class="home overflow-hidden" id="Home">
+      <div class="container-fluid">
+        <div class="container px-0 top-banner">
+          <div class="row">
+            <div class="col-lg-5 col-md-6 columnText ">
+              <h1 class="mt-5">Nothing brings people together like good food.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad cupiditate fuga tenetur, iusto rem beatae asperiores culpa.
+              </p>
+              <div class="mt-4 buttons">
+                <button class="btn btn-lg btn-danger rounded-0 pe-4 me-2 shadow orderBtn1">Order Now</button>
+                <button class="btn btn-lg btn-light rounded-0 pe-4 ms-2 shadow orderBtn2" id="btnOrder">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="flipBook py-5 overflow-hidden" id="Menu_Card">
+      <div class="container book">
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+        <div id="cover"><img src="./flip-book/cover page.png" class=" images"></div>
+        <div class="flip-book">
+          <div class="flip" id="p1">
+            <div class="back">
+            <img src="./flip-book/menu 1.png" class="images">
+            <label class="back-btn" for="c1">Back</label>
+            </div>
+            <div class="front">
+              <img src="./flip-book/menu 1.png" class="images">
+            <label class="next-btn" for="c1">Next</label>
+            </div>
+          </div>
+          <div class="flip" id="p2">
+            <div class="back giftcard">
+            <img src="./flip-book/gift card-voucher.png" class="images" >
+            <label class="back-btn" for="c2">Back</label>
+            </div>
+            <div class="front">
+              <img src="./flip-book/menu 1.png" class="images">
+            <label class="next-btn" for="c2">Next</label>
+            </div>
+          </div>
+        
+          <div class="flip" id="p3">
+            <div class="back">
+              <img src="./flip-book/tag.png" alt="" class="images">
+            <label class="back-btn" for="c3">Back</label>
+            </div>
+            <div class="front">
+              <img src="./flip-book/menu 1.png" class="images">
+            <label class="next-btn" for="c3">Next</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="aboutUs overflow-hidden" id="About_Us">
+        <div class="container">
+          <div class="row mx-auto">
+            <div class="col-lg-5 col-md-12 mt-auto mb-auto">
+              <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing 
+                elit. Qui porro quod necessitatibus! Totam nemo nulla 
+                consequuntur dicta voluptas, ipsam atque.
+              </p>
+              <ul class="bulletPoints">
+                <li><img src="./images/success.png" alt="tick mark" width="25px"> loremboro</li>
+                <li><img src="./images/success.png" alt="tick mark" width="25px">dvlsbnlk</li>
+                <li><img src="./images/success.png" alt="tick mark" width="25px">fldbjndfb</li>
+              </ul>
+              <button class="btn btn-lg btn-danger rounded-0 pe-4 me-2 shadow orderBtn1 orderBtn3">Order Now</button>
+            </div>
+            <div class="col-lg-7 col-md-12">
+              <div class="column1">
+                <img src="./images/bg/BeFunky-collage.jpg" alt="pav bhaji" class="imageCollage">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      
+    </section>
+
+
+    <section class="exploreFoods pt-5 mt-5 overflow-hidden" id="Explore_Foods">
+      <div class="container-fluid foodSection">
+        <div class="row mx-auto foods">
+          <div class="col-lg-3 col-md-12 columnFoods mx-auto py-2 mb-4 sandwich">
+            <div class="overlay"></div>
+            <img src="./images/img/img-1.png" alt="" class="imagese">
+            <button class="paragraph">Order Now</button>
+            <h1 class="title">Salads</h1>
+            <p>Specially prepared italian salads with our farm grown vegetables</p>
+          </div>
+
+          <div class="col-lg-3 col-md-12 columnFoods mx-auto py-2 mb-4 sandwich">
+            <div class="overlay"></div>
+            <img src="./images/img/img-3.jpg" alt="" class="imagese">
+            <button class="paragraph">Order Now</button>
+            <h1 class="title">Salads</h1>
+            <p>Specially prepared italian salads with our farm grown vegetables</p>
+          </div>
+          
+          <div class="col-lg-3 col-md-12 columnFoods mx-auto py-2 mb-4 sandwich">
+            <div class="overlay"></div>
+            <img src="./images/img/img-4.jpg" alt="" class="imagese">
+            <button class="paragraph">Order Now</button>
+            <h1 class="title">Salads</h1>
+            <p>Specially prepared italian salads with our farm grown vegetables</p>
+          </div>
+          
+          <div class="col-lg-2 col-md-12 columnFoods mx-auto py-2 mb-4 sandwich ">
+            <div class="overlay"></div>
+            <img src="./images/img/img-5.jpg" alt="" class="imagese">
+            <button type="button" class="paragraph paragraph2">Order Now</button>
+            <h1 class="title">Deserts</h1>
+            <p>Specially prepared italian salads with our farm grown vegetables</p>
+          </div>
+
+          
+
+
+          <div class="col-lg-3 col-md-12 columnFoods mx-auto py-2 mb-4 sandwich">
+            <div class="overlay"></div>
+            <img src="./images/img/img-1.png" alt="" class="imagese">
+            <button class="paragraph">Order Now</button>
+            <h1 class="title">Salads</h1>
+            <p>Specially prepared italian salads with our farm grown vegetables</p>
+          </div>
+
+          <div class="col-lg-3 col-md-12 columnFoods mx-auto py-2 mb-4 sandwich">
+            <div class="overlay"></div>
+            <img src="./images/img/img-3.jpg" alt="" class="imagese">
+            <button class="paragraph">Order Now</button>
+            <h1 class="title">Salads</h1>
+            <p>Specially prepared italian salads with our farm grown vegetables</p>
+          </div>
+          
+          <div class="col-lg-3 col-md-12 columnFoods mx-auto py-2 mb-4 sandwich">
+            <div class="overlay"></div>
+            <img src="./images/img/img-4.jpg" alt="" class="imagese">
+            <button class="paragraph">Order Now</button>
+            <h1 class="title">Salads</h1>
+            <p>Specially prepared italian salads with our farm grown vegetables</p>
+          </div>
+          
+          <div class="col-lg-2 col-md-12 columnFoods mx-auto py-2 mb-4 sandwich">
+            <div class="overlay"></div>
+            <img src="./images/img/img-5.jpg" alt="" class="imagese">
+            <button class="paragraph paragraph2">Order Now</button>
+            <h1 class="title">Deserts</h1>
+            <p>Specially prepared italian salads with our farm grown vegetables</p>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </section>
+
+
+      
+      
+
+
+</body>
+</html>
