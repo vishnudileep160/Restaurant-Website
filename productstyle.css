@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(255, 204, 0);
+}
+
+.container{
+    background-color: rgb(209, 211, 212);
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+    margin: 8%;
+}
+
+
+
+
+.columnLeft{
+    text-align: left;
+    margin: auto;
+}
+
+.columnRight{
+    text-align: right;
+}
+
+
+
+img{
+    width: 600px;
+    border-radius: 15px;
+    
+}
+
+input{
+    width: 3em;
+}
+
+button{
+    display: block;
+    margin: 1em 0.8em;
+    padding: 3px 6px;
+    border-radius: 15px;
+    box-shadow: inset 1px 1px 4px rgb(104, 104, 104);
+    background-color: brown;
+    color: bisque;
+}
