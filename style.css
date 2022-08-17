@@ -30,6 +30,7 @@
 *{
     cursor: url(./images/img/wooden-spoon2.png), auto;
     list-style: none;
+    user-select: none;
 }
 
 body{
@@ -38,6 +39,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    overflow-x: hidden;
     
 }
 
@@ -177,7 +179,7 @@ body{
 
 
 
-/* adkhfsKGHlRHGlRblSEb */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 input{
@@ -412,6 +414,8 @@ input{
 }
 
 
+
+/* ---------------------------------- Mobile Responsive ----------------------------> */
 
 
 
